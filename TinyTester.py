@@ -45,7 +45,7 @@ def handleArguements(argv):
 def main(argv):
 	#handleArguements(argv)
 	for counter in range(100):
-		tested = testOneUrl('http://tinyurl.com/', generatePath(7,))
+		tested = testOneUrl('http://tinyurl.com/', generatePath(6,))
 		if ' ' not in tested:
 			logSingleResponse(tested)
 		print(str(counter) + ' done')
