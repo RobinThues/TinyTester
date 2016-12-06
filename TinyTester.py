@@ -17,7 +17,7 @@ def generateTimestring():
 def testOneUrl(host='http://bit.ly/', path='1234567'):
 	try:
 		url = urllib.urlopen(host+path)
-		if url.geturl()!=(host+path) :
+		if url.geturl() != (host+path):
 			return url.geturl()
 		else:
 			return host + path + ' found nothing'
